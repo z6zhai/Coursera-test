@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+p {
+  border: 0px solid black;
+  width: 100%;
+  height: 130px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+  clear: right;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h2 {
+  float:right;
+  border: 1px solid black;
+  background-color: yellow;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    background-color: red;
+  }
+  .col-lg-4 {
+    width: 33%;
+    margin: 0.16%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    border: 1px solid black;
+    background-color: red;
+  }
+  .col-md-6 {
+    width: 49.5%;
+    margin: 0.25%;
+  }
+  #unique{
+    width:99.5%;
+    margin: 0.25%;
+  }
+}
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    background-color: red;
+  }
+  .col-sm-12 {
+    width: 100%;
+    margin: 0.5%;
+  }
+}
